@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokedexDesafio</title>
+    <link rel="stylesheet" href= "css/pokedex.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/popupCompare.css">
+</head>
+<body>
+    
+    <section class="content">
+        <h1 class="titulo">Pokedex</h1>
+
+        <div id="searchbar">
+            <input type="text" id="searchInput" placeholder="Search Pokemon">
+        </div>
+
+        <ol id="pokemonList" class="pokemons">
+           
+            
+        </ol>
+
+    </section>
+
+    <div id="pokemonPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div id="popupDetails"></div>
+        </div>
+    </div>
+
+    <div id="popupCompare" class="popupCompare">
+        <div class="popupCompare-content">
+          <div class="compareTitle">
+            <h2>Comparar Pokemon</h2>
+          </div>
+          <div class="selectPokemon">
+            <select id="secondPokemonSelect" onchange="selectSecondPokemon()">
+              <option value="">Selecione o segundo Pokemon</option>
+            </select>
+          </div>
+          <div class="imgsCompare">
+            <span class="closeCompare" onclick="closeComparePopup()">&times;</span>
+            <div id="firstPokemonContainer" class="firstPokemonContainer">
+              <img id="firstPokemonImage" src="" alt="Primeiro Pokemon">
+            </div>
+
+            <div id="secondPokemonContainer" class="secondPokemonContainer">
+
+              <img id="secondPokemonImage" src="" alt="Segundo Pokemon">
+            </div>
+          </div>
+          <div class="containerCompareButton">
+            <button class="compareButton" id="compareButton" onclick="compareSelectedPokemons()" >Comparar</button>
+          </div>
+        </div>
+    </div>
+
+    <script src="js/pokeModel.js"></script>
+    <script src="js/pokemonApi.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

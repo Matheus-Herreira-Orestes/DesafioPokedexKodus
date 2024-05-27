@@ -1,0 +1,162 @@
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8fc;
+}
+
+
+.content {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+ 
+}
+
+.content h1 {
+    margin: 0;
+}
+
+.titulo {
+    margin-bottom: 1rem;
+}
+
+
+#searchbar {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#searchbar input{
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+.pokemons {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+
+}
+
+
+.pokemon {
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.pokemon:hover {
+    cursor: pointer;
+}
+
+.pokemon .name {
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
+}
+
+.pokemon .number {
+    text-align: right;
+    color: black;
+    font-size: 0.625rem;
+}
+
+.pokemon .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pokemon .detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pokemon .detail .types .type {
+    color: #fff;
+    padding: 0.55rem;
+    font-size: 1rem;
+    margin: 0.8rem;
+    width: 150px;
+    height: 40px;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 15px;
+}
+
+.pokemons .detail img {
+    max-height: 150px;
+    max-width: 240px;
+}
+
+/* Estilos Específicos de Tipo de Pokemon */
+.normal { background-color: #a6a877; }
+.grass { background-color: #77c850; }
+.fire { background-color: #ee7f30; }
+.water { background-color: #678fee; }
+.electric { background-color: #f7cf2e; }
+.ice { background-color: #98d5d7; }
+.ground { background-color: #dfbf69; }
+.flying { background-color: #a98ff0; }
+.poison { background-color: #a040a0; }
+.fighting { background-color: #bf3029; }
+.psychic { background-color: #f65687; }
+.dark { background-color: #725847; }
+.rock { background-color: #b8a137; }
+.bug { background-color: #a8b720; }
+.ghost { background-color: #6e5896; }
+.steel { background-color: #b9b7cf; }
+.dragon { background-color: #6f38f6; }
+.fairy { background-color: #f9aec7; }
+
+
+.listStats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; 
+}
+
+.listStats span {
+    display: block;
+}
+
+
+.containerSelectCompare{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.selectCompare{
+    color: white;
+    cursor: pointer;
+    background-color: gray;
+    height: 30px;
+    border-radius: 10%;
+}
+
